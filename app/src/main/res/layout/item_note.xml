@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_item_title"
+            android:layout_width="match_parent"
+            android:text="Note1"
+            android:maxLines="1"
+            android:textStyle="bold"
+            android:padding="@dimen/padding_item_title"
+            android:textSize="@dimen/textsize_item_title_note"
+            android:textColor="@color/textcolor_item_title"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/iv_clock"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="@dimen/marrgin_right_item_clock"
+            android:src="@drawable/ic_clock"
+            android:layout_marginTop="@dimen/marrgintop_item_clock"
+            android:layout_alignParentEnd="true"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" />
+        <TextView
+            android:id="@+id/tv_line"
+            android:layout_below="@id/tv_item_title"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/marrginleft_item_line"
+            android:layout_marginRight="@dimen/marrginright_item_line"
+            android:background="@color/bg_line_below_item"
+            android:layout_height="@dimen/title_line" />
+        <TextView
+            android:id="@+id/tv_item_subject"
+            android:layout_width="match_parent"
+            android:lines="3"
+            android:layout_below="@id/tv_line"
+            android:paddingTop="@dimen/paddingtop_item_subject"
+            android:paddingLeft="@dimen/paddingleft_item_subject"
+            android:paddingRight="@dimen/paddingright_item_subject"
+            android:text="kjldhfgjdfkghdkhfgkdfjhgfdhjg"
+            android:textColor="@color/color_item_subject"
+            android:paddingBottom="@dimen/paddingbottom_item_subject"
+            android:textSize="@dimen/textsize_item_subject"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_item_time"
+            android:layout_below="@id/tv_item_subject"
+            android:text="03:07"
+            android:paddingTop="@dimen/paddingtop_item_time"
+            android:paddingLeft="@dimen/paddingleft_item_time"
+            android:paddingRight="@dimen/paddingright_item_time"
+            android:paddingBottom="@dimen/paddingbottom_item_time"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" />
+        <TextView
+            android:id="@+id/tv_item_date"
+            android:layout_below="@id/tv_item_subject"
+            android:text="22/10"
+            android:layout_toLeftOf="@id/tv_item_time"
+            android:paddingTop="@dimen/paddingtop_item_time"
+            android:paddingLeft="@dimen/paddingleft_item_time"
+            android:paddingRight="@dimen/paddingright_item_time"
+            android:paddingBottom="@dimen/paddingbottom_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
